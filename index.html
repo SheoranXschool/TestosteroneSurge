@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testosterone Surge - Download My 108 Ways to Increase Testosterone</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header styles */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 220px;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            background: linear-gradient(to bottom, #ffffff, #cccccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .header p {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        /* VSL Video Container */
+        .vsl-video-container {
+            position: absolute;
+            top: 55%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90%;
+            max-width: 800px;
+            z-index: 2;
+        }
+
+        .vsl-video-container iframe {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* CTA button styles */
+        .cta-button {
+            display: block;
+            background-color: #FFD700;
+            color: #000000;
+            text-align: center;
+            padding: 14px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 30px auto;
+            border-radius: 5px;
+            max-width: 250px;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        /* Optimization note */
+        .optimization-note {
+            text-align: center;
+            font-size: 12px;
+            color: #999999;
+            margin-bottom: 30px;
+        }
+
+        /* Section styles */
+        .section {
+            margin-bottom: 40px;
+            padding: 0 15px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #ffffff, #aaaaaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .section h3 {
+            font-size: 20px;
+            margin-bottom: 18px;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #ffffff, #bbbbbb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .section p {
+            margin-bottom: 18px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Feature box styles */
+        .feature-box {
+            position: relative;
+            z-index: 1;
+            margin: 40px auto;
+            max-width: 1200px;
+            text-align: center;
+            background: linear-gradient(to bottom, #222222, #111111);
+            border-radius: 10px;
+            padding: 25px 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Icon container */
+        .icon-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, #FFD700, #FFA500);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+        }
+
+        /* Feature list styles */
+        .feature-list {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .feature-item .check-icon {
+            flex: 0 0 24px;
+            height: 24px;
+            margin-right: 15px;
+            color: #FFD700;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .feature-item .num-icon {
+            flex: 0 0 24px;
+            height: 24px;
+            margin-right: 15px;
+            color: #FFD700;
+            text-align: center;
+            line-height: 24px;
+            font-weight: bold;
+            font-size: 18px;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-item .text {
+            flex: 1;
+            font-size: 16px;
+        }
+
+        /* Testimonial section (Why This System Works) */
+        .testimonial-section {
+            /* Remove dark gradient & box shadow to match other text sections */
+            margin-bottom: 40px;
+            padding: 0 15px;
+            text-align: center;
+        }
+
+        .testimonial-section h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+            background: linear-gradient(to bottom, #ffffff, #aaaaaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+
+        .testimonial-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .testimonial-item .bullet-icon {
+            flex: 0 0 24px;
+            height: 24px;
+            margin-right: 15px;
+            color: #FFD700;
+            text-align: center;
+            line-height: 24px;
+            font-size: 20px;
+        }
+
+        .testimonial-item .text {
+            flex: 1;
+            font-size: 16px;
+        }
+
+        /* Testimonial Video Container */
+        .testimonial-video-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 20px;
+            padding: 20px;
+            scroll-snap-type: x mandatory;
+            width: 100%;
+            margin: 40px 0;
+        }
+
+        .video-wrapper {
+            flex: 0 0 200px;
+            scroll-snap-align: start;
+            background: #111;
+            border-radius: 12px;
+            padding: 4px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-wrapper:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 9 / 16;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .mute-button {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: gold;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        /* Planets Visualization */
+        .planets-container {
+            position: relative;
+            height: 150px;
+            margin: 50px 0;
+        }
+
+        .planet {
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .planet-center {
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, #FFD700, #FFA500);
+            top: 45px;
+            left: 45%;
+        }
+
+        .planet-1 {
+            width: 35px;
+            height: 35px;
+            background: radial-gradient(circle, #6495ED, #4169E1);
+            top: 20px;
+            left: 25%;
+        }
+
+        .planet-2 {
+            width: 30px;
+            height: 30px;
+            background: radial-gradient(circle, #FF6347, #FF4500);
+            top: 80px;
+            left: 30%;
+        }
+
+        .planet-3 {
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle, #90EE90, #32CD32);
+            top: 35px;
+            left: 70%;
+        }
+
+        .planet-4 {
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, #DDA0DD, #BA55D3);
+            top: 90px;
+            left: 65%;
+        }
+
+        /* Team section */
+        .team-container {
+            text-align: center;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            padding: 30px 20px;
+            border-radius: 10px;
+            margin: 50px 0;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .team-image {
+            width: 90%;
+            max-width: 500px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .team-container h2 {
+            color: #000000;
+            font-size: 26px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .team-container h3 {
+            color: #000000;
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Dark CTA button for team section */
+        .dark-cta-button {
+            display: block;
+            background-color: #000000;
+            color: #FFD700;
+            text-align: center;
+            padding: 14px 25px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 25px auto;
+            border-radius: 5px;
+            max-width: 250px;
+            font-size: 16px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            font-size: 10px;
+            color: #666666;
+            margin-top: 50px;
+            line-height: 1.5;
+        }
+
+        .footer a {
+            color: #888888;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Logo -->
+    <div style="width: 100vw;">
+        <img src="https://i.ibb.co/mCRkBRJ6/IMG-20250306-WA0023.jpg" alt="Logo"
+            style="width: 100%; max-width: 1200px; height: auto; display: block; margin: 0 auto;">
+    </div>
+
+    <!-- Background Image with Overlapping Text and Video -->
+    <div style="position: relative; width: 100vw; height: auto;">
+        <img src="https://i.ibb.co/bTkpbxq/IMG-20250306-WA0022.jpg" alt="Background Image"
+            style="width: 100vw; height: auto; object-fit: cover; display: block;">
+
+        <!-- Text Overlay -->
+        <div
+            style="position: absolute; top: 20px; left: 0; width: 100%; padding: 20px; color: white; text-align: center; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);">
+            <h1 style="font-size: 2rem; margin-bottom: 10px;">Download My 108 Tactics <br> "Testosterone Surge"</h1>
+            <p style="font-size: 0.9rem; margin-bottom: 3px;">I'm giving you my exact dark tactics that will get you
+                from 98ng/dl to 1500ng/dl.</p>
+            <p style="font-size: 0.9rem;">I'm revealing the uncomfortable science behind skyrocketing your
+                testosterone.<br> Watch the video below.</p>
+        </div>
+
+        <!-- VSL Video Container -->
+        <div class="vsl-video-container">
+            <iframe src="https://www.youtube.com/embed/0_qotozdZgU" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- CTA Section Positioned Between Background and Black Section -->
+    <a href="https://sheoranx.gumroad.com/l/RawTestosteroneSurge" class="cta-button" id="cta-button">GET INSTANT ACCESS
+        NOW</a>
+    </div>
+    <!-- Optimization Note -->
+    <div class="optimization-note">
+        DESIGNED FOR MAXIMIZING TESTOSTERONE LEVELS NATURALLY
+    </div>
+
+    <div class="optimization-note">
+        This resource is optimized for Mobile use.
+    </div>
+
+
+
+    <!-- Breakthrough Section -->
+    <div class="section">
+        <h2>Discover the 100 Proven Ways to Boost Testosterone</h2>
+        <p>I've compiled every known method to naturally increase testosterone levels. Here's what you'll learn:</p>
+        <p>From diet and exercise to lifestyle changes and supplements, this guide covers it all. It's the ultimate
+            blueprint for reclaiming your manhood.</p>
+    </div>
+    <!-- First Feature Box (Updated with Explosion Icon) -->
+    <div
+        style="max-width: 400px; margin: 50px auto; padding: 20px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); color: white; text-align: center;">
+        <div class="icon-container" style="margin-bottom: 10px;">
+            <div class="icon">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f98d/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f98d/512.gif" alt="🦍" width="32"
+                        height="32">
+                </picture>
+            </div>
+        </div>
+
+        <h3 style="font-size: 20px; margin-bottom: 15px;">My Complete Testosterone Boosting Blueprint</h3>
+
+        <div style="text-align: left; padding: 0 20px;">
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Eliminate testosterone-killing habits that are sabotaging your health.</div>
+            </div>
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Implement bulletproof protocols to boost testosterone while you sleep.</div>
+            </div>
+            <div style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Master the 5 critical habits that the top 1% of men use daily.</div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Feature Box (Updated with Explosion Icon) -->
+    <div class="feature-box"
+        style="max-width: 400px; margin: 50px auto; padding: 20px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); color: white; text-align: center;">
+
+        <div class="icon-container">
+            <div class="icon" style="
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, #FFD700, #FFA500);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 3px 10px rgba(255, 215, 0, 0.4);
+        ">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa_1f3fb/512.webp"
+                        type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4aa_1f3fb/512.gif" alt="💪"
+                        style="width: 32px; height: 32px;">
+                </picture>
+            </div>
+        </div>
+
+        <h3>The 3-Stage Framework to Dominate Your Hormones</h3>
+
+        <div class="feature-list" style="text-align: left; padding: 0 20px;">
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Identify hidden testosterone killers in your daily life.</div>
+            </div>
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Unleash game-changing strategies to transform your body and mind.</div>
+            </div>
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Create a sustainable routine that keeps your testosterone levels sky-high.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Feature Box (Updated with Explosion Icon) -->
+    <div class="feature-box"
+        style="max-width: 400px; margin: 50px auto; padding: 20px; background: linear-gradient(135deg, #1a1a1a, #0d0d0d); border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); color: white; text-align: center;">
+
+        <div class="icon-container">
+            <div class="icon">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3af/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3af/512.gif" alt="🎯" width="32"
+                        height="32">
+                </picture>
+            </div>
+        </div>
+
+        <h3>Real Case Study: My Testosterone Transformation</h3>
+        <p>See how I doubled my testosterone levels in just 30 days:</p>
+
+        <div class="feature-list" style="text-align: left; padding: 0 20px;">
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Built a legendary fitness routine that works when everything else fails.</div>
+            </div>
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Doubled my testosterone levels when doctors said it was impossible.</div>
+            </div>
+            <div class="feature-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4a5/512.gif" alt="💥" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div>Created proven templates that have helped thousands of men transform their lives.</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Why Framework Works Section (Updated with Lightning Bolt Icons for Key Points) -->
+    <div class="testimonial-section">
+        <h2>Why This System Works</h2>
+        <p>I've used this exact system to:</p>
+
+        <div class="feature-list">
+            <div class="testimonial-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt="⚡" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div class="text">Help hundreds of men double their testosterone levels naturally.</div>
+            </div>
+            <div class="testimonial-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt="⚡" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div class="text">Transform lives with scientifically backed methods.</div>
+            </div>
+            <div class="testimonial-item" style="display: flex; align-items: center; margin: 10px 0;">
+                <picture>
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt="⚡" width="20"
+                        height="20" style="margin-right: 10px;">
+                </picture>
+                <div class="text">Create a step-by-step blueprint that anyone can follow.</div>
+            </div>
+        </div>
+
+        <p>This isn’t just theory—it’s a proven system that has worked for me and thousands of others. Now, it’s your
+            turn.</p>
+    </div>
+
+    <!-- Testimonial Videos -->
+    <div class="feature-box">
+        <h2 style="font-size: 22px; text-align: center; margin-bottom: 30px; background: linear-gradient(to bottom, #FFD700, #FFA500);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            Real Men, Real Results
+        </h2>
+        <div class="testimonial-video-container">
+            <!-- Video 1 -->
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/WX3JIcuEvuo?autoplay=1&mute=1&controls=0&modestbranding=1"></iframe>
+                <button class="mute-button" onclick="toggleMute(this)">Unmute</button>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/9YGG5vj0stI?autoplay=1&mute=1&controls=0&modestbranding=1"></iframe>
+                <button class="mute-button" onclick="toggleMute(this)">Unmute</button>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/BGiMJe8w_tA?autoplay=1&mute=1&controls=0&modestbranding=1"></iframe>
+                <button class="mute-button" onclick="toggleMute(this)">Unmute</button>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="video-wrapper">
+                <iframe
+                    src="https://www.youtube.com/embed/vjb6cb_SxMg?autoplay=1&mute=1&controls=0&modestbranding=1"></iframe>
+                <button class="mute-button" onclick="toggleMute(this)">Unmute</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Team Section -->
+    <div class="team-container">
+        <a href="https://ibb.co/S1kxPPX">
+            <img src="https://i.ibb.co/38xs77y/IMG-20250306-WA0032.jpg" alt="Testosterone Surge Team"
+                class="team-image">
+        </a>
+        <h2>Testosterone Surge</h2>
+        <h3>Claim Your Access Today:</h3>
+
+        <p
+            style="color: #000000; font-size: 16px; margin-bottom: 20px; max-width: 500px; margin-left: auto; margin-right: auto;">
+            For men who are ready to take control of their health, energy, and confidence, this guide is your ultimate
+            resource. Start your transformation today—no excuses, no delays.
+        </p>
+
+        <a href="https://sheoranx.gumroad.com/l/RawTestosteroneSurge" class="dark-cta-button" id="cta-button">GET
+            INSTANT ACCESS NOW</a>
+
+        <p style="color: #000000; font-size: 14px; margin-top: 15px;">
+            *Enter your name and email to gain immediate access.
+        </p>
+        <p style="color: #000000; font-size: 14px;">
+            Your journey to peak testosterone starts here.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Copyright © 100 Ways to Increase Testosterone | All Rights Reserved</p>
+        <p>
+            <a href="https://youtube.com/@sheoranxp?si=7TycZGcOSDYMZk1-">Terms of Service</a> |
+            <a href="https://youtube.com/@sheoranxp?si=7TycZGcOSDYMZk1-">Privacy Policy</a> |
+            <a href="https://youtube.com/@sheoranxp?si=7TycZGcOSDYMZk1-">Contact Us</a> |
+            <a href="https://youtube.com/@sheoranxp?si=7TycZGcOSDYMZk1-">Unsubscribe</a>
+        </p>
+    </div>
+
+
+    <!-- CTA Button -->
+
+    <!-- Hidden Audio File -->
+    <audio id="cta-audio">
+        <source src="ReelAudio-68492.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let ctaAudio = document.getElementById("cta-audio");
+
+            if (!sessionStorage.getItem("audioPlayed")) {
+                ctaAudio.play().catch(error => console.log("Audio blocked:", error));
+                sessionStorage.setItem("audioPlayed", "true");
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            let ctaButton = document.getElementById("cta-button");
+            let ctaAudio = document.getElementById("cta-audio");
+
+            ctaButton.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent immediate navigation
+                ctaAudio.play().catch(error => console.log("Audio play blocked:", error));
+
+                setTimeout(() => {
+                    window.location.href = ctaButton.href; // Redirect after sound plays
+                }, 1000); // Adjust delay (1000ms = 1s)
+            });
+        });
+
+
+        // Mute/Unmute functionality
+        function toggleMute(button) {
+            const iframe = button.previousElementSibling;
+            const isMuted = iframe.src.includes("mute=1");
+
+            if (isMuted) {
+                iframe.src = iframe.src.replace("mute=1", "mute=0");
+                button.textContent = "Mute";
+            } else {
+                iframe.src = iframe.src.replace("mute=0", "mute=1");
+                button.textContent = "Unmute";
+            }
+        }
+
+        // Animate videos on scroll
+        const videoWrappers = document.querySelectorAll('.video-wrapper');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.transform = "scale(1.1)";
+                } else {
+                    entry.target.style.transform = "scale(1)";
+                }
+            });
+        }, {threshold: 0.5});
+
+        videoWrappers.forEach(wrapper => {
+            observer.observe(wrapper);
+        });
+    </script>
+</body>
+
+</html>
